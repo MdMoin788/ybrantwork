@@ -1,15 +1,15 @@
 import React from "react";
 import Chart from 'react-apexcharts';
-
+import "./csss.css"
 function Charts() {
     return (
         <>
-            <div className="container-fluid mb-5">
+            <div className="container-fluid mb-5" style={{ margin: "auto" }}>
 
                 <Chart
                     type="bar"
-                    width={1000}
-                    height={300}
+                    width={400}
+                    height={500}
                     series={[
                         {
                             name: "Data 5",
@@ -19,10 +19,7 @@ function Charts() {
                     ]}
 
                     options={{
-                        title: {
-                            text: "Horizantal Bar Graph",
-                            style: { fontSize: "30px" }
-                        },
+
                         chart: {
                             stacked: true,
                         },
@@ -30,15 +27,15 @@ function Charts() {
                             title: {
                                 text: "Horizantal Bar Graph"
                             },
-                            categories: ['AGILE FAST/agile marketing', 'AGILE FAST/agile marketing', '2014', 'AGILE FAST/agile marketing', 'AGILE FAST/agile marketing']
+                            categories: ['2010', '2012', '2014', '2020', '2022']
                         },
 
 
                         plotOptions: {
                             bar: {
-                                horizontal: true,
-                                columnWidth: '100%',
-                                borderRadius:10
+                                columnWidth: '70%',
+                                borderRadius: 10,
+
                             }
                         },
                         stroke: {
